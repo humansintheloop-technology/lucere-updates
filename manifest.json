@@ -1,0 +1,45 @@
+{
+  "name": "Lucere updates",
+  "source": "https://raw.githubusercontent.com/humansintheloop-technology/lucere-updates/main/",
+  "channels": {
+    "stable": "1.7.0",
+    "beta": "1.7.1"
+  },
+  "releases": [
+    {
+      "version": "1.7.1",
+      "channel": "beta",
+      "date": "2026-11-10",
+      "title": "A small test update",
+      "note": "This one only changes the version number on your Trust page, to show that updates reach you and go in on your yes. Nothing else changes.",
+      "essential": false,
+      "from": "1.7.0",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [
+        {
+          "path": "releases/1.7.1/patches/17_version_1_7_1.py",
+          "role": "page-patch",
+          "sha256": "098dfc6372d7adc083de64248db2c84ac7a3a62d6804fbe5395709aed834e8e0",
+          "bytes": 542
+        }
+      ],
+      "notes": "releases/1.7.1/NOTES.md"
+    },
+    {
+      "version": "1.7.0",
+      "channel": "stable",
+      "date": "2026-11-10",
+      "title": "Updates, on your yes",
+      "note": "Your space checks for new versions once a day and tells you in your morning brief. Nothing changes until you say update Lucere and then yes.",
+      "essential": false,
+      "from": "1.6",
+      "kind": "by-email",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [],
+      "notes": "releases/1.7.0/NOTES.md"
+    }
+  ]
+}
