@@ -3,9 +3,30 @@
   "source": "https://raw.githubusercontent.com/humansintheloop-technology/lucere-updates/main/",
   "channels": {
     "stable": "1.7.0",
-    "beta": "1.7.1"
+    "beta": "1.7.2"
   },
   "releases": [
+    {
+      "version": "1.7.2",
+      "channel": "beta",
+      "date": "2026-11-11",
+      "title": "Updates now show on Today",
+      "note": "When a new version of Lucere is ready, a card at the top of Today tells you what it brings and what to say. Nothing changes until you say yes.",
+      "essential": false,
+      "from": "1.7.1",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [
+        {
+          "path": "releases/1.7.2/patches/18_update_on_today.py",
+          "role": "page-patch",
+          "sha256": "f352308b7395b949ebf623e152d6c8e17dc7d221ea66634e5fe9426553323482",
+          "bytes": 2477
+        }
+      ],
+      "notes": "releases/1.7.2/NOTES.md"
+    },
     {
       "version": "1.7.1",
       "channel": "beta",
