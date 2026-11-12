@@ -2,13 +2,13 @@
   "name": "Lucere updates",
   "source": "https://raw.githubusercontent.com/humansintheloop-technology/lucere-updates/main/",
   "channels": {
-    "stable": "1.7.0",
+    "stable": "1.7.2",
     "beta": "1.7.2"
   },
   "releases": [
     {
       "version": "1.7.2",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-11",
       "title": "Updates now show on Today",
       "note": "When a new version of Lucere is ready, a card at the top of Today tells you what it brings and what to say. Nothing changes until you say yes.",
@@ -29,7 +29,7 @@
     },
     {
       "version": "1.7.1",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-10",
       "title": "A small test update",
       "note": "This one only changes the version number on your Trust page, to show that updates reach you and go in on your yes. Nothing else changes.",
