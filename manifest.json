@@ -3,9 +3,90 @@
   "source": "https://raw.githubusercontent.com/humansintheloop-technology/lucere-updates/main/",
   "channels": {
     "stable": "1.7.2",
-    "beta": "1.7.2"
+    "beta": "1.7.5"
   },
   "releases": [
+    {
+      "version": "1.7.5",
+      "channel": "beta",
+      "date": "2026-11-16",
+      "title": "Clearer decisions",
+      "note": "Each decision is now its own card in plain words: what it's about, one question, and answers that say what they do. What each answer does hasn't changed.",
+      "essential": false,
+      "from": "1.7.4",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [
+        {
+          "path": "releases/1.7.5/patches/21_clear_decisions.py",
+          "role": "page-patch",
+          "sha256": "689cae81c6222781abc85c72b04ceba5e594d1225f4f92f529d30cf1a4087d30",
+          "bytes": 13645
+        }
+      ],
+      "notes": "releases/1.7.5/NOTES.md"
+    },
+    {
+      "version": "1.7.4",
+      "channel": "beta",
+      "date": "2026-11-16",
+      "title": "Today, in soft shapes",
+      "note": "Each part of Today now sits in its own softly shaped card with a gentle color, so the day is easier to take in at a glance. Nothing else changes.",
+      "essential": false,
+      "from": "1.7.3",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [
+        {
+          "path": "releases/1.7.4/patches/20_today_shapes.py",
+          "role": "page-patch",
+          "sha256": "53d5d1e593003a3960b2f5c935476bc93d54a1557cf1d37798dba3f7f6565210",
+          "bytes": 9240
+        }
+      ],
+      "notes": "releases/1.7.4/NOTES.md"
+    },
+    {
+      "version": "1.7.3",
+      "channel": "beta",
+      "date": "2026-11-16",
+      "title": "Every update is tested first",
+      "note": "Before an update changes your space, it now opens your space before and after, tab by tab, and stops if anything breaks. Nothing else changes.",
+      "essential": false,
+      "from": "1.7.2",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [
+        {
+          "path": "releases/1.7.3/patches/19_version_1_7_3.py",
+          "role": "page-patch",
+          "sha256": "089981eb64471433090f896df33ef8075551cb7f102d5e128988d24a66d3a7ac",
+          "bytes": 740
+        },
+        {
+          "path": "releases/1.7.3/files/os-regression-tests.md",
+          "role": "doc",
+          "sha256": "062ff7ac8921e0d22acd74bd1235cb5cf18039d64007f01acaf1b187376ccd4e",
+          "bytes": 12929
+        },
+        {
+          "path": "releases/1.7.3/files/os-update-skill.md",
+          "role": "skill",
+          "sha256": "c8b0bb8753ffa5bd1d0522c4fa849aac019218fc54df22bd5d65236d748da719",
+          "bytes": 9702
+        },
+        {
+          "path": "releases/1.7.3/files/os-nightly-skill.md",
+          "role": "skill",
+          "sha256": "b4a5498d55efae374b26fd2bb6593cd5823eaff31ce6f63774af887a45a35fa0",
+          "bytes": 12809
+        }
+      ],
+      "notes": "releases/1.7.3/NOTES.md"
+    },
     {
       "version": "1.7.2",
       "channel": "stable",
