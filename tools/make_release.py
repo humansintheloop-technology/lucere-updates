@@ -49,7 +49,7 @@ def check_text(path, raw):
     if any(l != l.rstrip(' ') for l in t.split('\n')): errs.append(f'{path}: trailing spaces')
     if not t.endswith('\n') or t.endswith('\n\n'): errs.append(f'{path}: must end with exactly one newline')
     if SECRET.search(t): errs.append(f'{path}: looks like it holds a key or token')
-    if os.path.basename(path) in ('os-page.html',) or '<!DOCTYPE html>' in t: errs.append(f'{path}: a whole page never goes here; ship a patch')
+    if os.path.basename(path) in ('os-page.html',) or re.search(r'^\s*<!DOCTYPE html>', t, re.M): errs.append(f'{path}: a whole page never goes here; ship a patch')
     return errs
 
 def cmd_add(a):
