@@ -2,13 +2,13 @@
   "name": "Lucere updates",
   "source": "https://raw.githubusercontent.com/humansintheloop-technology/lucere-updates/main/",
   "channels": {
-    "stable": "1.7.2",
+    "stable": "1.7.5",
     "beta": "1.7.5"
   },
   "releases": [
     {
       "version": "1.7.5",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-16",
       "title": "Clearer decisions",
       "note": "Each decision is now its own card in plain words: what it's about, one question, and answers that say what they do. What each answer does hasn't changed.",
@@ -29,7 +29,7 @@
     },
     {
       "version": "1.7.4",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-16",
       "title": "Today, in soft shapes",
       "note": "Each part of Today now sits in its own softly shaped card with a gentle color, so the day is easier to take in at a glance. Nothing else changes.",
@@ -50,7 +50,7 @@
     },
     {
       "version": "1.7.3",
-      "channel": "beta",
+      "channel": "stable",
       "date": "2026-11-16",
       "title": "Every update is tested first",
       "note": "Before an update changes your space, it now opens your space before and after, tab by tab, and stops if anything breaks. Nothing else changes.",
