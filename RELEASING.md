@@ -11,14 +11,14 @@ Every release is small, plain, and readable, because owners see its notes before
 ## Steps
 1. Write and test the patch against the current kit page (in the private kit repository): apply it, run the kit's tests, and raise `const KIT_VERSION` to the new version inside the same patch.
 2. Make a branch here, then add the release:
-   `python3 tools/make_release.py add --version 1.7.2 --channel beta --from 1.7.1 --title "..." --note "..." --file path/to/18_x.py:page-patch`
+   `python3 tools/make_release.py add --version 1.7.6 --channel stable --from 1.7.5 --title "..." --note "..." --file path/to/22_x.py:page-patch`
    - Title and note are what owners read. Plain words, one or two sentences, no jargon.
    - Add `--essential` only for a safety fix or something broken for everyone. It sits at the top of every brief until it's in.
    - If the patch mentions sending, capabilities, or a connector tool, the tool stops until you read it and add `--send-unchanged`, or `--touches-send` (owners are told and asked separately).
    - Add `--capability "plain words"` for anything the page would newly be allowed to do. It needs the owner's own yes.
 3. Check it: `python3 tools/make_release.py verify`, and `python3 tools/make_release.py try --page <kit>/os-page.html --from <previous stable> --channel beta`.
-4. Open a pull request. The check runs on it. Read the diff once more, then merge. Testers (beta) see it the next morning.
-5. When it has run well for testers for a week, move it to stable: change `"channels": {"stable": ...}` and that release's `"channel"` to `"stable"` in a second pull request.
+4. Open a pull request. The check runs on it. Read the diff once more, then merge. Every space sees it the next morning.
+5. Every owner gets every update (Tyler, Nov 16, 2026: founders are the test group). Release with `--channel stable`. Use `--channel beta` only when Tyler wants a tester to try one first; then move it to stable in a second pull request by changing `"channels": {"stable": ...}` and that release's `"channel"` to `"stable"`.
 6. Never change or remove a released file. To fix a release, publish the next version.
 
 ## Keeping this repository safe
