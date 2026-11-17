@@ -4,10 +4,10 @@ This repository holds updates for Lucere, a personal operating system that each 
 
 ## How an owner's space uses it
 - Once a day, the owner's space reads `manifest.json` from this repository, and nothing else. It only reads. If a newer version is waiting, the owner's morning brief says so in one line.
-- Nothing is applied until the owner says "update Lucere" in their own Claude project chat and then yes.
+- Nothing is applied until the owner says yes. From v1.8.0, their space prepares a tested copy overnight and the owner taps Update, then Yes, on their own page; updates that carry a skill, doc, instructions or a new capability are applied in their Claude project chat when they say "update Lucere" and then yes.
 - Every file is checked against the size and sha256 fingerprint in `manifest.json` before it is used. If anything doesn't match, nothing changes.
 - An update never adds a connection, a capability, a way to send, or a schedule on its own. If one would, it says so in plain words and asks the owner separately.
-- The owner can say "go back to v<version>" at any time.
+- The owner can tap Undo update on their Trust page, or say "go back to v<version>" at any time.
 
 ## What's here
 - `manifest.json`: the channels (`stable`, and `beta` for early testers) and every release, newest first.
