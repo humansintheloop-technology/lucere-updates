@@ -1,6 +1,6 @@
 # Releasing a Lucere update
 
-Every release is small, plain, and readable, because owners see its notes before they say yes, and Claude applies it in their chat.
+Every release is small, plain, and readable, because owners see its notes before they say yes. A release of page patches only, with no capabilities and no send change, installs with one tap on the owner's page (v1.8.0 and later); anything else is applied by Claude in their chat.
 
 ## Before you start
 - One change, one release. Keep each page patch under 16 KB and plain ASCII (inside a Python string, write a curly apostrophe as the escape `\u2019`).

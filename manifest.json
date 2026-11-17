@@ -2,10 +2,90 @@
   "name": "Lucere updates",
   "source": "https://raw.githubusercontent.com/humansintheloop-technology/lucere-updates/main/",
   "channels": {
-    "stable": "1.7.5",
-    "beta": "1.7.5"
+    "stable": "1.8.1",
+    "beta": "1.8.1"
   },
   "releases": [
+    {
+      "version": "1.8.1",
+      "channel": "stable",
+      "date": "2026-11-16",
+      "title": "iPad, and clearer ideas",
+      "note": "Your iPad looks even and nothing slides sideways. The kids' week reads as a list when it's narrow. Notes become Ideas you answer with a tap. Keywords match whole words.",
+      "essential": false,
+      "from": "1.8.0",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [],
+      "files": [
+        {
+          "path": "releases/1.8.1/patches/24_kids_week_fits.py",
+          "role": "page-patch",
+          "sha256": "16839a7e0466039d168a8a040c838270a4786d060131cc90ea6b049935b7f566",
+          "bytes": 2231
+        },
+        {
+          "path": "releases/1.8.1/patches/25_ipad_layout.py",
+          "role": "page-patch",
+          "sha256": "2604e329e2bfced09a62beeeb934ffe1c41238ec7f0459cf1c5a10858ccf4da5",
+          "bytes": 2921
+        },
+        {
+          "path": "releases/1.8.1/patches/26_ideas_from_chief.py",
+          "role": "page-patch",
+          "sha256": "13512ade2ae7d74a6d60fc633d67e47729a0a12a320b47f777b33fdb9f927e2c",
+          "bytes": 8344
+        },
+        {
+          "path": "releases/1.8.1/patches/27_whole_word_keywords.py",
+          "role": "page-patch",
+          "sha256": "41a38376a4fcf46d32323084ef9c001d20449fb831577f3c42ada13d0ae09cba",
+          "bytes": 1666
+        }
+      ],
+      "notes": "releases/1.8.1/NOTES.md"
+    },
+    {
+      "version": "1.8.0",
+      "channel": "stable",
+      "date": "2026-11-16",
+      "title": "Update with one tap",
+      "note": "New versions of Lucere now install with a tap on Update, right on Today, and Undo on the Trust page takes one back out. Each is checked and tested on a copy of your space first, and nothing changes until you say yes.",
+      "essential": false,
+      "from": "1.7.5",
+      "kind": "patches",
+      "touches_send": false,
+      "capabilities": [
+        "Lets your page install an update, or undo one, only after you tap Update or Undo and then Yes. It can publish only your own page. (Declare artifact: {} beside what the page already has.)"
+      ],
+      "files": [
+        {
+          "path": "releases/1.8.0/patches/22_one_tap_updates.py",
+          "role": "page-patch",
+          "sha256": "780a4fcf09995e21940e4c72b39e9c52dec6b07749918d4292dac0e025b2be93",
+          "bytes": 14860
+        },
+        {
+          "path": "releases/1.8.0/files/os-update-skill.md",
+          "role": "skill",
+          "sha256": "84d29badb144d59089f30f0bf41f0bbc7c33e2480b734dad8c6d27d4e7d689f3",
+          "bytes": 13705
+        },
+        {
+          "path": "releases/1.8.0/files/os-nightly-skill.md",
+          "role": "skill",
+          "sha256": "4ab433b800c657be7cbf3420e8ef12af9493deb6a9fa5121d8da0434ca1dd540",
+          "bytes": 13718
+        },
+        {
+          "path": "releases/1.8.0/files/os-chief-skill.md",
+          "role": "skill",
+          "sha256": "56c3bad0b18da2a93c79646cd413e42a817ed2e158d3a5931519b374cc936d53",
+          "bytes": 8449
+        }
+      ],
+      "notes": "releases/1.8.0/NOTES.md"
+    },
     {
       "version": "1.7.5",
       "channel": "stable",
